@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagem Flexível</title>
+    <style>
+      p {
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Imagem Flexível</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+      error quia rem veniam voluptatem iste, totam nulla inventore
+      necessitatibus eos molestiae suscipit beatae illum, temporibus nemo
+      officiis. Et, illo molestias. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. In, iusto natus? Doloremque explicabo non magnam, quidem
+      accusantium voluptas id ut dicta error odio tenetur rerum corrupti
+      deleniti voluptate, officia quas.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minima,
+      provident, obcaecati nulla eligendi deserunt atque possimus in laboriosam
+      iure natus quaerat, tempora adipisci. Beatae voluptatum quae tempore
+      quidem vero! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Temporibus sequi, et fugit similique hic dolor omnis quaerat at molestias
+      sint sapiente est praesentium repudiandae eligendi voluptate suscipit
+      quidem consectetur magnam.
+    </p>
+    <picture>
+      <source
+        media="(max-width: 750px)"
+        srcset="imagem/paisagem-p.png"
+        type="image/png"
+      />
+      <source
+        media="(max-width: 1250px)"
+        srcset="imagem/paisagem-m.png"
+        type="image/png"
+      />
+      <img src="imagem/paisagem-g.png" alt="Imagem de paisagem" />
+    </picture>
+  </body>
+</html>
