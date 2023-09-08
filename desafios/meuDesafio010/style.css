@@ -26,7 +26,12 @@ header > h1 {
   font-family: var(--fonteDestaque);
   color: white;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3.5em;
+  max-width: 800px;
+  min-width: 240px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
   font-weight: normal;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -40,6 +45,12 @@ header p {
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.418);
   margin-top: 20px;
   font-weight: normal;
+  font-size: 1.3em;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 800px;
+  min-width: 240px;
+  margin: auto;
 }
 
 nav {
@@ -53,6 +64,8 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   padding: 10px;
+  min-width: 240px;
+  max-width: 800px;
 }
 
 nav a:hover {
@@ -83,8 +96,10 @@ main h1 {
   font-family: var(--fonteDestaque);
   color: var(--cor5);
   padding: 30px;
-  font-size: 2.5em;
+  font-size: 3em;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.288);
+  padding-bottom: 80px;
+  padding-top: 60px;
 }
 
 ol {
@@ -93,6 +108,7 @@ ol {
   margin: 30px 20px 30px 20px;
   box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.164);
   padding: 10px;
+  columns: 2;
 }
 
 .h1Menor {
@@ -115,7 +131,7 @@ main p {
   text-align: justify;
   text-indent: 30px;
   margin: 0px 15px 10px 15px;
-  line-height: 1.8em;
+  line-height: 2em;
 }
 
 .paragrafoDescricao {
@@ -128,6 +144,7 @@ main p {
 
 aside {
   margin: 50px 0px;
+  margin-top: 20px;
 }
 
 .linkConteudo {
@@ -170,8 +187,10 @@ div {
 }
 
 img {
-  width: 90%;
-  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 70%;
+  padding-left: 20px;
 }
 
 footer {
