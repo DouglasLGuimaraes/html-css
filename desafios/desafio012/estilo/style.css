@@ -7,7 +7,7 @@
 
 html,
 body {
-  min-height: 100%vh;
+  min-height: 100vh;
   background-color: darkgray;
 }
 
@@ -19,27 +19,29 @@ header {
 
 header > h1 {
   padding-top: 50px;
-  font-variant: small-caps;
+  font-variant: small-caps; /*Letras em maiúscula e primeira letra de cada palavra maior */
 }
 
 header > p {
   padding-bottom: 50px;
 }
 
-a {
+header a,
+footer a {
   color: white;
   text-decoration: none;
   font-weight: bolder;
 }
 
-a:hover {
+header a:hover,
+footer a:hover {
   text-decoration: underline;
 }
 
 section {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  line-height: 2em;
+  line-height: 2em; /*Espaço entre linhas*/
   padding-left: 30px;
 }
 
@@ -49,18 +51,18 @@ section.normal {
 }
 
 section.imagem {
-  background-color: rgb(77, 76, 76);
+  background-color: rgb(49, 49, 49);
   color: white;
 }
 
 section.imagem > p {
   width: 400px;
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 0.281);
 }
 
 footer {
-  text-align: center;
+  background-color: black;
   color: white;
   padding: 10px;
-  background-color: black;
+  text-align: center;
 }
