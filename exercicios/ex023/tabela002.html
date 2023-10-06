@@ -10,8 +10,22 @@
       }
 
       table {
+        position: relative;
         width: 500px;
         border-collapse: collapse;
+      }
+
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+      }
+
+      thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
       }
 
       td,
@@ -22,6 +36,11 @@
 
       td.num {
         text-align: right;
+      }
+
+      tbody > tr:nth-child(odd) {
+        /* Ou (tr:nth-child(2n-1))*/
+        background-color: lightgray;
       }
 
       thead,
@@ -36,6 +55,7 @@
     <!--
       ANATOMIA PARA TABELAS GRANDES
       TABLE
+        CAPTION
         THEAD
               tr, td, th
         TBODY
@@ -44,10 +64,15 @@
               tr, td, th            
     -->
     <table>
+      <caption>
+        População das Unidades Federativas
+      </caption>
       <thead>
         <tr>
-          <th>Estado</th>
-          <th>População</th>
+          <th scope="col">Estado</th>
+          <!--Escopo referente a coluna-->
+          <th scope="col">População</th>
+          <!--Escopo referente a coluna-->
         </tr>
       </thead>
       <tbody>
@@ -163,7 +188,8 @@
       </tbody>
       <tfoot>
         <tr>
-          <th>Total de Habitantes</th>
+          <th scope="row">Total de Habitantes</th>
+          <!--Escopo referente a linha-->
           <td class="num"><strong>203 062 512</strong></td>
         </tr>
       </tfoot>
